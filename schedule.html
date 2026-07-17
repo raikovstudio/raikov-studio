@@ -21,80 +21,136 @@
 
 <div class="container">
 
-<div class="left">
+    <div class="left">
 
-<img src="images/raikov2.jpg" alt="Raikov">
+        <img src="images/raikov-full.jpg" alt="Raikov">
+
+    </div>
+
+    <div class="right">
+
+        <h1>Schedule a Project</h1>
+
+        <p class="subtitle">
+            Fill in the information below.
+        </p>
+
+        <form id="projectForm" novalidate>
+
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+            >
+
+            <small class="error"></small>
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+
+            <small class="error"></small>
+
+            <label for="project">Project Type</label>
+
+            <select
+                id="project"
+                name="project"
+                required
+            >
+
+                <option value="">Choose one...</option>
+                <option>YouTube Video</option>
+                <option>Short Form</option>
+                <option>Gaming</option>
+                <option>Documentary</option>
+                <option>Other</option>
+
+            </select>
+
+            <small class="error"></small>
+
+            <label>Budget</label>
+
+            <div class="budget">
+
+                <input
+                    type="number"
+                    id="budget"
+                    name="budget"
+                    placeholder="0"
+                    required
+                >
+
+                <select
+                    id="currency"
+                    name="currency"
+                    required
+                >
+
+                    <option>USD $</option>
+                    <option>EUR €</option>
+                    <option>GBP £</option>
+                    <option>CHF Fr</option>
+                    <option>CAD $</option>
+                    <option>AUD $</option>
+
+                </select>
+
+            </div>
+
+            <small class="error"></small>
+
+            <label for="description">Description</label>
+
+            <textarea
+                id="description"
+                name="description"
+                rows="6"
+                required
+            ></textarea>
+
+            <small class="error"></small>
+
+            <label for="files">Attachments</label>
+
+            <input
+                type="file"
+                id="files"
+                name="files"
+                multiple
+                accept=".mp4,.mov,.avi,.mkv,.png,.jpg,.jpeg,.zip,.rar,.7z,.psd,.aep"
+            >
+
+            <small class="upload-text">
+                You can attach videos, images, ZIP, PSD or After Effects files.
+            </small>
+
+            <button type="submit">
+
+                Send Request
+
+            </button>
+
+        </form>
+
+        <a class="back" href="index.html">
+
+            ← Back to Home
+
+        </a>
+
+    </div>
 
 </div>
 
-<div class="right">
-
-<h1>Schedule a Project</h1>
-
-<p class="subtitle">
-Fill in the information below.
-</p>
-
-<form>
-
-<label>Name</label>
-<input type="text">
-
-<label>Email</label>
-<input type="email">
-
-<label>Project Type</label>
-
-<select>
-
-<option>YouTube Video</option>
-<option>Short Form</option>
-<option>Gaming</option>
-<option>Documentary</option>
-<option>Other</option>
-
-</select>
-
-<label>Budget</label>
-
-<div class="budget">
-
-<input type="number" placeholder="0">
-
-<select>
-
-<option>USD $</option>
-<option>EUR €</option>
-<option>GBP £</option>
-<option>CHF Fr</option>
-<option>AUD $</option>
-<option>CAD $</option>
-
-</select>
-
-</div>
-
-<label>Description</label>
-
-<textarea rows="6"></textarea>
-
-<button type="submit">
-
-Send Request
-
-</button>
-
-</form>
-
-<a class="back" href="index.html">
-
-← Back to Home
-
-</a>
-
-</div>
-
-</div>
+<script src="schedule.js"></script>
 
 </body>
 
