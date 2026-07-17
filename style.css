@@ -115,12 +115,11 @@ body{
 
 .status{
     margin-bottom:12px;
-    color:#b7d6a3;
     font-weight:bold;
 }
 
 .status span{
-    color:#cfe7bd;
+    color:inherit;
 }
 
 .small{
