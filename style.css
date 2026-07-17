@@ -212,3 +212,26 @@ a:hover{
 }
 
 }
+
+.small{
+    margin-top:8px;
+    font-size:.9rem;
+    opacity:.75;
+}
+
+.footer{
+    text-align:center;
+    padding:28px 0 12px;
+}
+
+.footer p:first-child{
+    font-style:italic;
+    opacity:.8;
+    margin-bottom:18px;
+}
+
+.copyright{
+    font-size:.75rem;
+    letter-spacing:3px;
+    opacity:.45;
+}
