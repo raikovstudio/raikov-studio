@@ -41,8 +41,10 @@ body{
     overflow:hidden;
 
     box-shadow:
-    0 0 30px rgba(0,0,0,.75),
-    inset 0 0 12px rgba(255,255,255,.02);
+        0 0 30px rgba(0,0,0,.75),
+        inset 0 0 12px rgba(255,255,255,.02);
+
+}
 
 .left{
 
@@ -69,6 +71,12 @@ body{
     object-position:center;
 
     display:block;
+
+}
+
+.right{
+
+    padding:42px;
 
 }
 
@@ -278,40 +286,40 @@ select.invalid{
 
 @media(max-width:950px){
 
-body{
+    body{
 
-    padding:20px;
+        padding:20px;
 
-}
+    }
 
-.container{
+    .container{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-}
+    }
 
-.left{
+    .left{
 
-    height:500px;
+        height:500px;
 
-}
+    }
 
-.right{
+    .right{
 
-    padding:28px;
+        padding:28px;
 
-}
+    }
 
-h1{
+    h1{
 
-    font-size:38px;
+        font-size:38px;
 
-}
+    }
 
-.budget{
+    .budget{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-}
+    }
 
 }
